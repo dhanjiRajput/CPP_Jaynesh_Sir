@@ -105,13 +105,19 @@ int main()
 		cout <<endl<<endl<<"Enter Item Number :";
 		cin >> n1;
 		
+		
+		int cnt = 0;
 		for(i=0; i<n; i++)
 		{
 			check = b1[i].searchData(n1);
+			
+			if(check) 
+			{
+				cnt ++;
+			}
 		}
 		
-		
-		if(check==)
+		if(cnt==0)
 		{
 			cout <<"No Data Available !!! ";
 		}  
